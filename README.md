@@ -14,7 +14,7 @@ This is a simple todo application built using JavaScript. It allows users to cre
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/your_username/todo-app.git`
+1. Clone the repository: `git clone https://github.com/nuwan-vpn/The-Odin-Project-Todo-List.git`
 2. Navigate to the project directory: `cd todo-app`
 3. Install dependencies: `npm install`
 4. Build the project: `npm run build`
