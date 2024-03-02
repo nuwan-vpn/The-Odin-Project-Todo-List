@@ -1,1 +1,1 @@
-alert("ToDo App")
+alert("Todo App");
