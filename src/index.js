@@ -1,1 +1,1 @@
-alert("todo app");
+import "./css/main.css"

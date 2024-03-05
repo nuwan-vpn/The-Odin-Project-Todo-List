@@ -6,12 +6,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
     <title>Todo App</title>
 </head>
 <body>
-    <h1 class="title">My Tasks</h1>
+  <div class="header">
+    <div class="logo">
+      <h1 aria-label="To Do">TO DO</h1>
+    </div>
+    <div class="sorter">
+      <span>sort by:</span>
+      <select id="priority-sorter" data-filter-name="by-priority" aria-label="Sort by priority">
+          <option value="" selected disabled>priority (select order)</option>
+          <option value="ascending">high to low priority</option>
+          <option value="descending">low to high priority</option>
+      </select>
+      <select id="date-sorter" data-filter-name="by-date" aria-label="Sort by date">
+          <option value="" selected disabled>date (select order)</option>
+          <option value="ascending">early date first</option>
+          <option value="descending">later date first</option>
+      </select>
+    </div>
+  </div>
+     
+  <div id="content">
 
+  </div>
     <div class="all-tasks">
       <h2 class="task-list-title">My lists</h2>
       <ul class="task-list">
