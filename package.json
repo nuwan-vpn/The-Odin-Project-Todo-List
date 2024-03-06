@@ -5,7 +5,8 @@
   "description": "This is a simple todo application built using JavaScript. It allows users to create projects and organize their tasks within those projects. Each todo item has properties such as title, description, due date, and priority. Users can view all projects and todos, edit todo details, mark todos as complete, delete todos, and create new projects.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Nuwan",
   "license": "ISC",
@@ -16,6 +17,8 @@
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2",
+    "webpack-merge": "^5.10.0"
   }
 }
