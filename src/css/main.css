@@ -4,14 +4,21 @@
     box-sizing: border-box;
     font: inherit;
     text-transform: capitalize;
+   
 }
 
-/* Header styles */
+body{
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    grid-auto-columns:auto ;
+}
+
 .header {
     background-color: darkblue;
     color: #fff;
     padding: 1rem;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -28,4 +35,20 @@
 
 .sorter select {
     margin-left: 0.5rem;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    grid-auto-rows: auto;
+    
+}
+
+.sidebar{
+    background-color: darkblue;
+    
+}
+
+.project-area{
+    background-color:white;
 }
