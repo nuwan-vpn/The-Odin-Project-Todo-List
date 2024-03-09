@@ -1,18 +1,10 @@
-import { name } from "file-loader";
 
 const listsContainer = document.querySelector('[data-lists]');
 const newListForm = document.querySelector('[data-new-list-form]');
 const newListInput = document.querySelector('[data-new-list-input]');
 
-let lists = [{
-    id:1,
-    name:'Study'
-    },
-    {
-    id:2,
-    name:'Make tutorials'
-    }
-];
+const LOCAL_STORAGE_LIST_KEY = 'task.lists';
+let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || [];
 
 newListForm.addEventListener('submit', e => {
     e.preventDefault();
@@ -45,4 +37,9 @@ function clearElement(element){
     }
 }
 
-export default render;
+function save() {
+    localStorage.setItem(LOCAL_STORAGE_LIST_KEY, JSON.stringify(lists))
+    localStorage.setItem(LOCAL_STORAGE_SELECTED_LIST_ID_KEY, selectedListId)
+}
+  
+export { render, createList };

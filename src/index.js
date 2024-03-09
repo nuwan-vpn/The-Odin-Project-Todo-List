@@ -1,3 +1,4 @@
 import "./css/main.css"
-import render from "./todolist.js"
+import render, { createList } from "./todolist.js"
 render();
+createList();
