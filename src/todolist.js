@@ -13,7 +13,7 @@ newListForm.addEventListener('submit', e => {
     const list = createList(listName);
     newListInput.value = null;
     lists.push(list);
-    render();
+    saveAndRender();
 })
 
 function createList(name){
