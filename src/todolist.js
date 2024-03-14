@@ -4,7 +4,9 @@ const newListForm = document.querySelector('[data-new-list-form]');
 const newListInput = document.querySelector('[data-new-list-input]');
 
 const LOCAL_STORAGE_LIST_KEY = 'task.lists';
+const LOCAL_STORAGE_SELECTED_LIST_ID_KEY = 'task.selectedListId'
 let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || [];
+let selectedListId = localStorage.getItem(LOCAL_STORAGE_SELECTED_LIST_ID_KEY);
 
 newListForm.addEventListener('submit', e => {
     e.preventDefault();
@@ -27,6 +29,7 @@ function render(){
         listElement.dataset.listId = list.id;
         listElement.classList.add("list-name");
         listElement.innerHTML = list.name;
+        if(list.id === selectedListId) listElement.classList.add('active-list');
         listsContainer.appendChild(listElement);
     })
 }
