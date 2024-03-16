@@ -18,9 +18,9 @@ listsContainer.addEventListener('click', e =>{
 })
 
 deleteListButton.addEventListener('click', e => {
-    lists = lists.filter(list => list.id !== selectedListId)
-    selectedListId = null
-    saveAndRender()
+    lists = lists.filter(list => list.id !== selectedListId);
+    selectedListId = null;
+    saveAndRender();
 })
 
 newListForm.addEventListener('submit', e => {
