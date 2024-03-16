@@ -51,6 +51,8 @@ body{
 
 .project-area{
     background-color:white;
+    display: flex;
+    flex-direction: row;   
 }
  
 .task-list {
