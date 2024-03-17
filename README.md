@@ -42,7 +42,7 @@ This is a simple todo application built using JavaScript. It allows users to cre
 
 ## License
 
-Copyright &copy; 2024 vpnSolutions.com. All Rights Reserved. <br>
+Copyright &copy; 2024 vpn6666Solutions.com. All Rights Reserved. <br>
 This project is licensed under the [MIT License](License.txt) - see the [MIT License](License.txt) file for details.
 
 
