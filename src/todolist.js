@@ -56,6 +56,10 @@ function createList(name){
     return {id:Date.now().toString(), name:name, tasks:[]};
 }
 
+function createTask(name) {
+    return { id: Date.now().toString(), name: name, complete: false }
+}
+
 function render(){
     clearElement(listsContainer);
     renderLists();
